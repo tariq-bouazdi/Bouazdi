@@ -1,37 +1,88 @@
-## Welcome to GitHub Pages
+import "./styles.css";
 
-You can use the [editor on GitHub](https://github.com/tariq-bouazdi/Bouazdi/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+document.getElementById("app").innerHTML = `
+<!DOCTYPE html>
+<html>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+  <head>
 
-### Markdown
+    <title>TP JS YacineDRARENI TariqBOUAZDI</title>
+    <charset="UTF-8">;
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <style>
+    
+      h1  { background-color: rgb(169, 169, 180);
+            color: white  }
+      
+      .ville { color: rgb(100, 100, 130);}
+      
+      .divVille{ background-color: rgb(220, 220, 255);
+                  border:solid 2px rgb(200,200,230);
+                  width:200px ;
+                  display :flex;
+                  flex : 1;
+                  margin-bottom:20px;
+                  margin-left : 10px;
+                  margin-right: 10px;
+                  justify-content:space-around }
 
-```markdown
-Syntax highlighted code block
+      #flex { display :flex;justify-content:space-around;
+              flex-wrap:wrap}
 
-# Header 1
-## Header 2
-### Header 3
+      footer  { background-color: rgb(169, 169, 180);
+                color: black; font-size:12px;opacity:0.5}
+    
+    </style>
+  </head>
+  
 
-- Bulleted
-- List
+<body>
+    <center>
+      <h1>TP Météo HTML</h1>  
+    </center>
 
-1. Numbered
-2. List
+  <div id="flex">
+    <div class ="divVille">
+      <div>
+        <h2 class = "ville"> Lyon </h2>
+        <p> 6° , Nuageux </p>
+      </div>
 
-**Bold** and _Italic_ and `Code` text
+      <div>
+        <img src="/src/img/noun_clouds_653375.png"
+        width="60" alt ="nuages">
+        <br>
+      </div>
+    </div>
 
-[Link](url) and ![Image](src)
-```
+  <div class = "divVille">
+    <div>
+      <h2 class="ville"> Paris </h2>
+      <p> 1° , Nuageux </p>
+    </div>
+    <div>
+    <img src="/src/img/noun_clouds_653375.png"
+      width="60" alt ="nuages">
+      <br>
+    </div>
+  </div>
+   
+  <div class = "divVille">
+    
+    <div>
+      <h2 class = "ville"> Alger </h2> 
+      <p> 17° , couvert </p>
+    </div>
+    <div>    
+      <img src="/src/img/noun_sun cloud_653897.png"
+      width="60" alt ="partiellement couvert">
+    </div>
+  </div>
+</div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tariq-bouazdi/Bouazdi/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+  <footer>
+      <p> Tariq BOUAZDI - Yacine DRARENI<br>icones created by noun project </p>
+  </footer>
+      </body>
+</html>
+`;
